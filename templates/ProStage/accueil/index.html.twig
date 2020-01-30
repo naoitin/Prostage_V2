@@ -1,0 +1,72 @@
+{% extends 'ProStageTemplate.html.twig' %}
+
+{% block title %}ProStage{% endblock %}
+
+{% block titrePage %}
+
+Bienvenue sur la page d'accueil de Prostages
+
+{% endblock %}
+
+{% block titreDuContenu %}
+
+Propositions de stage
+
+{% endblock %}
+
+{% block contenu %}
+
+<div class="card-deck">
+  <div class="card mb-3" >
+    <a href="/stages/1">
+      <img src="/Img/Conception.jpg" class="card-img-top" alt="...">
+      <div class="card-header text-white bg-dark">Stage 1 </div>
+    </a>
+    <div class="card-body">
+      <p class="card-text">Description de l'offre de stage</p>
+      <p class="card-text">
+        <small class="text-muted">Entreprise : Apple</small>
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Date d'ajout : dd/mm/yyyy</small>
+      </p>
+    </div>
+  </div>
+  <div class="card mb-3" >
+    <a href="/stages/2">
+      <img src="/Img/Prog.jpg" class="card-img-top" alt="...">
+      <div class="card-header text-white bg-dark">Stage 2 </div>
+    </a>
+    <div class="card-body">
+      <p class="card-text">Description de l'offre de stage</p>
+      <p class="card-text">
+        <small class="text-muted">Entreprise : Microsoft</small>
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Date d'ajout : dd/mm/yyyy</small>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck" style="margin-top:15px;">
+  <div class="card mb-3" >
+    <a href="/stages/3">
+      <img src="/Img/web-design.jpg" class="card-img-top" alt="...">
+      <div class="card-header text-white bg-dark">Stage 3 </div>
+    </a>
+    <div class="card-body">
+      <p class="card-text">Description de l'offre de stage</p>
+      <p class="card-text">
+        <small class="text-muted">Entreprise : Microsoft</small>
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Date d'ajout : dd/mm/yyyy</small>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}

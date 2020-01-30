@@ -1,0 +1,36 @@
+{% extends 'ProStageTemplate.html.twig' %}
+
+{% block title %}Fiche stage {{idTransmise}}{% endblock %}
+
+{% block titrePage %}
+
+<h1>Cette page affichera le descriptif du stage ayant pour identifiant {{idTransmise}}</h1>
+
+{% endblock %}
+
+
+{% block titreDuContenu %}
+Voici la fiche du stage {{idTransmise}}
+
+{% endblock %}
+
+
+{% block contenu %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Intitulé</h1>
+  <hr class="my-4">
+  <p class="lead"><i class="icon-building-filled"></i>Entreprise : Microsoft</p>
+  <p class="lead"><i class="icon-mail-alt"></i> Mail : xabavellan@gmail.com </p>
+  <p class="lead"><i class="icon-fax"></i>Telephone : 07 79 56 14 23</p>
+  <hr class="my-4">
+  <p class="lead">Formation : DUT Informatique</p>
+  <p class="lead">Mission :</p>
+  <ul>
+    <li>Faire ca a peu pres coi</li>
+    <li>Mais aussi faire ca coi</li>
+  </ul>
+</div>
+
+
+{% endblock %}
